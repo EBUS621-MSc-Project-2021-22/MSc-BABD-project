@@ -1,3 +1,4 @@
+#test run
 library(igraph)
 library(igraphdata)
 
@@ -11,3 +12,26 @@ gl <- graph(edges = c(1,2,
                       4,3))
 summary(gl)
 plot(gl)
+
+
+
+#sample test
+library(igraph)
+g <- graph(c(1,2,2,3,3,4,4,1)
+    
+plot(g,
+     vertex.color = "green",
+     vertex.size = 40,
+     edge.color = 'red')
+g[]
+
+degree(g, mode = 'all')
+degree(g, mode = 'in')
+degree(g, mode = 'out') 
+
+diameter(g, directed=F, weights = NA)
+edge_density(g, loops = F)
+ecount(g)/(vcount(g)*vcount(g))
+reciprocity(g)
+closeness(g, mode='all', weights = NA)
+betweenness(g, directed =T, weights = NA)
