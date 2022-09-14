@@ -6,8 +6,6 @@ data <- read.csv(file.choose(), header=T)
 
 y <- data.frame(data$First, data$second)
 
-
-
 #highlighting degree & layouts
 
 plot(net,
@@ -20,8 +18,6 @@ plot(net,
 
      layout=layout.fruchterman.reingold)
 
-
-
 plot(net,
 
      vertex.color = rainbow(52),
@@ -31,7 +27,6 @@ plot(net,
      edge.arrow.size = 0.1,
 
      layout=layout.kamada.kawai)
-
 
 
 #Hub and authorities
@@ -47,7 +42,6 @@ set.seed(123)
 plot(net,
 
 
-
 #Community detection
 
 net <- graph.data.frame(y,directed = F)
@@ -61,6 +55,7 @@ plot(cnet,
      vertex.size = 10,
 
      vertex.label.cex = 0.8)
+     
      
 #degree centrality
 d = centralization.degree(r)
